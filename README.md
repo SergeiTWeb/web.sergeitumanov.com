@@ -1,75 +1,71 @@
-# React + TypeScript + Vite
+# Sergei Tumanov | Full Stack Web Developer Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Portfolio Preview](https://github.com/user-attachments/assets/bcfff33a-c4da-46cb-a753-1453c1dd9376)
 
-Currently, two official plugins are available:
+Welcome to my personal portfolio! I am a recent Full Stack Development graduate from ITMO University with a passion for building clean, modern, and user-centric web interfaces. 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+This repository contains the source code for my portfolio website, built from the ground up to showcase my journey, skills, and selected projects.
 
-## React Compiler
+## 🚀 Live Demo
+**[View Live Website](https://your-domain.com)** *(Update this link once you deploy!)*
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 👨‍💻 About Me
+I am a Junior Full Stack Developer focused on creating minimalist, high-performance web applications. I don't just write code; I solve problems. I bring practical project experience across the full stack, a strong foundation in modern frontend frameworks, and a builder’s mindset. 
 
-## Expanding the ESLint configuration
+I am currently open to **full-time junior developer roles** and **freelance collaborations**.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🛠️ Tech Stack
+This project was built to demonstrate proficiency in modern web development practices:
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+*   **Core:** React.js, TypeScript, Vite
+*   **Routing:** React Router v6 (Single Page Application architecture)
+*   **Styling:** Modern CSS3, CSS Variables, Flexbox, Grid, Responsive Design
+*   **Version Control:** Git & GitHub
+*   **Architecture:** Component-based design, clean folder structure, reusable UI components
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## ✨ Key Features
+*   **Single Page Application (SPA):** Smooth, instant page transitions without full browser reloads.
+*   **Fully Responsive:** Mobile-first approach ensuring a flawless experience on all devices.
+*   **Minimalist UI/UX:** Clean, gallery-style design inspired by modern digital exhibitions.
+*   **Interactive Elements:** Custom 3D flip cards, hover animations, and dynamic filtering.
+*   **Type Safety:** Built entirely with TypeScript to ensure robust, bug-free code.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
+## 📂 Project Structure
+```text
+src/
+├── components/   # Reusable UI components (Layout, BackToTop)
+├── pages/        # Main route views (Home, Portfolio, Clients, Contact)
+├── App.tsx       # Main application component & routing setup
+├── App.css       # Global styles and CSS variables
+└── main.tsx      # Application entry point
 ```
 
-You can also install [eslint-plugin-react-x](https://npmx.dev/package/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://npmx.dev/package/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
+## 🏗️ Getting Started (Local Development)
+If you'd like to run this project locally or review the code, follow these steps:
+1. Clone the repository:
+```bash
+   git clone https://github.com/SergeiTWeb/portfolio.git
+   cd portfolio
 ```
+2. Install dependencies:
+```bash
+npm install
+```
+3. Start the development server:
+```bash
+npm run dev
+```
+Open your browser and navigate to http://localhost:5173.
+4. Build for production:
+```bash
+npm run build
+```
+
+## 📬 Contact & Connect
+I am always eager to connect with fellow developers, recruiters, and potential clients.
+
+Email: [website](https://sergeitumanov.web@gmail.com/)
+LinkedIn: [linkedin](https://www.linkedin.com/in/sergei-tumanov/)
+GitHub: github.com/SergeiTWeb
+
+Built with ❤️ using React & TypeScript.

@@ -1,28 +1,47 @@
-import { Link, Outlet } from 'react-router-dom';
+import { NavLink, Outlet } from 'react-router-dom';
+import { useState } from 'react';
+import BackToTop from './BackToTop';
 
 function Layout() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
   return (
     <div className="app-layout">
-      <header className="app-header">
-        <h1>My Portfolio</h1>
-        <nav>
-          {/* IMPORTANT: We use 'Link' instead of 'a' tags! 
-              'Link' prevents the page from fully reloading. */}
-          <Link to="/">Home</Link>
-          <Link to="/react">React/TS</Link>
-          <Link to="/php">PHP</Link>
-          <Link to="/vanilla">HTML/CSS/JS</Link>
-        </nav>
+      <header className="header">
+        <div className="wrapper">
+          <div className="logo-container">
+            <h1 className="logo">
+              <NavLink to="/">Sergei Tumanov</NavLink>
+            </h1>
+            <span className="logo-subtitle">Web Developer & Designer</span>
+          </div>
+          
+          <button 
+            className="menu-toggle"
+            onClick={() => setMenuOpen(!menuOpen)}
+            aria-label="Toggle menu"
+          >
+            ☰
+          </button>
+          
+          <nav className={`nav ${menuOpen ? 'active' : ''}`}>
+            <NavLink to="/" onClick={() => setMenuOpen(false)}>About</NavLink>
+            <NavLink to="/portfolio" onClick={() => setMenuOpen(false)}>Portfolio</NavLink>
+            <NavLink to="/clients" onClick={() => setMenuOpen(false)}>Clients</NavLink>
+            <NavLink to="/contact" onClick={() => setMenuOpen(false)}>Contact</NavLink>
+          </nav>
+        </div>
       </header>
 
-      <main className="app-main">
-        {/* Outlet is where the routed pages will be injected */}
+      <main>
         <Outlet />
       </main>
 
-      <footer className="app-footer">
-        <p>&copy; 2024 My Portfolio. Built with React.</p>
+      <footer className="footer">
+        <p>&copy; {new Date().getFullYear()} Sergei Tumanov. Built with React & TypeScript.</p>
       </footer>
+
+      <BackToTop />
     </div>
   );
 }
