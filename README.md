@@ -1,13 +1,13 @@
 # Sergei Tumanov | Full Stack Web Developer Portfolio
 
-![Portfolio Preview](https://github.com/user-attachments/assets/bcfff33a-c4da-46cb-a753-1453c1dd9376)
+![Portfolio Preview](public/screenshot.png)
 
 Welcome to my personal portfolio! I am a recent Full Stack Development graduate from ITMO University with a passion for building clean, modern, and user-centric web interfaces. 
 
 This repository contains the source code for my portfolio website, built from the ground up to showcase my journey, skills, and selected projects.
 
 ## 🚀 Live Demo
-**[View Live Website](https://your-domain.com)** *(Update this link once you deploy!)*
+**[View Live Website](https://web.sergeitumanov.com)**
 
 ## 👨‍💻 About Me
 I am a Junior Full Stack Developer focused on creating minimalist, high-performance web applications. I don't just write code; I solve problems. I bring practical project experience across the full stack, a strong foundation in modern frontend frameworks, and a builder’s mindset. 
