@@ -1483,3 +1483,184 @@ CLIENTS PAGE MOBILE CHECK
     justify-content: flex-start;
   }
 }
+
+/* ==========================================================================
+CLIENTS PAGE LOGO UNIFORMITY & HOVER EFFECTS
+========================================================================== */
+.client-logo {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-bg);
+  border-radius: 8px;
+  border: 1px solid var(--color-border);
+  overflow: hidden;
+  flex-shrink: 0; /* Prevents the box from squishing on smaller screens */
+}
+
+.client-logo img {
+  max-width: 65%;
+  max-height: 65%;
+  object-fit: contain; /* Ensures the logo scales perfectly without stretching */
+  filter: grayscale(100%); /* Starts black & white for a clean, uniform look */
+  opacity: 0.7;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Beautiful hover effect: logo becomes full color and slightly larger */
+.client-row:hover .client-logo img {
+  filter: grayscale(0%);
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+.logo-fallback {
+  font-family: var(--font-display);
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--color-text-light);
+  display: none; /* Hidden by default, shown via JS if image fails to load */
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.view-project.disabled {
+  color: var(--color-text-light);
+  cursor: default;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.85rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.view-project.disabled svg {
+  display: none;
+}
+
+/* ==========================================================================
+CLIENTS PAGE - ARCHIVED STATE STYLING
+========================================================================== */
+.view-project.archived {
+  color: var(--color-text-light);
+  cursor: default;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.85rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  background: var(--color-bg-secondary);
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  border: 1px solid var(--color-border);
+}
+
+.view-project.archived svg {
+  opacity: 0.6;
+}
+
+/* Optional: Add a subtle tooltip-like hover effect to explain */
+.view-project.archived:hover {
+  border-color: var(--color-text-light);
+  color: var(--color-text-secondary);
+}
+/* ==========================================================================
+CLIENTS PAGE - ENHANCED SERVICES EMPHASIS
+========================================================================== */
+
+.client-header {
+  margin-bottom: 0.5rem;
+}
+
+.client-header h3 {
+  font-family: var(--font-primary);
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin: 0;
+  color: var(--color-text);
+}
+
+/* Industry description (lighter, secondary) */
+.client-industry {
+  font-size: 0.95rem;
+  color: var(--color-text-secondary);
+  line-height: 1.5;
+  margin: 0 0 0.75rem 0;
+  font-weight: 300;
+}
+
+/* Services container */
+.client-services {
+  font-size: 0.95rem;
+  color: var(--color-text);
+  line-height: 1.5;
+  margin: 0;
+  font-weight: 400;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+}
+
+/* The "Services" label pill */
+.services-label {
+  font-weight: 600;
+  color: var(--color-text);
+  white-space: nowrap;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  letter-spacing: 0.08em;
+  background: var(--color-bg-secondary);
+  padding: 3px 8px;
+  border-radius: 4px;
+  border: 1px solid var(--color-border);
+  margin-top: 2px;
+  flex-shrink: 0; /* Prevents the label from squishing */
+}
+
+/* Ensure archived state still looks good with the new layout */
+.view-project.archived {
+  color: var(--color-text-light);
+  cursor: default;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.8rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  background: var(--color-bg-secondary);
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  border: 1px solid var(--color-border);
+  margin-top: 0.5rem; /* Added slight spacing for mobile alignment */
+}
+
+.view-project.archived svg {
+  opacity: 0.6;
+  width: 14px;
+  height: 14px;
+}
+
+/* Mobile adjustment for the new services layout */
+@media (max-width: 768px) {
+  .client-services {
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+  
+  .services-label {
+    align-self: flex-start;
+  }
+  
+  .view-project.archived {
+    margin-top: 1rem;
+  }
+}
