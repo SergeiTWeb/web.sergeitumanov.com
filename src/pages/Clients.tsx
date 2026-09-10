@@ -60,7 +60,7 @@ const clients = [
     industry: "Wallcoverings, textiles, and home accessories retailer.",
     services: "E-commerce functionality implementation, maintenance, and technical support.",
     link: "https://kerrycodesign.com",
-  status: "coming-soo" // Options: "live", "coming-soon", "archived"
+    status: "coming-soon" // Options: "live", "coming-soon", "archived"
   },
 
   {
