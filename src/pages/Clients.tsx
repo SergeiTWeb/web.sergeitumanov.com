@@ -60,14 +60,14 @@ const clients = [
     industry: "Wallcoverings, textiles, and home accessories retailer.",
     services: "E-commerce functionality implementation, maintenance, and technical support.",
     link: "https://kerrycodesign.com",
-  status: "live" // Options: "live", "coming-soon", "archived"
+  status: "coming-soo" // Options: "live", "coming-soon", "archived"
   },
 
   {
     id: 8,
     logo: "/img/clients/client-wilvarinvocal.png",
     name: "Wilvarin Vocal",
-    industry: "Wilvarin Vocal School is a music school that provides vocal training and education.",
+    industry: "Wilvarin Vocal is a music school that provides vocal training and music education.",
     services: "Design, and technical support.",
     link: "https://wilvarinvocal.ru/",
     status: "live"
