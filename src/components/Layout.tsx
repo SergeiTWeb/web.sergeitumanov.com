@@ -38,7 +38,29 @@ function Layout() {
       </main>
 
       <footer className="footer">
-        <p>&copy; {new Date().getFullYear()} Sergei Tumanov. Built with React & TypeScript.</p>
+        <div className="wrapper">
+          {/* Acknowledgment of Country */}
+          <div className="footer-acknowledgment">
+            <p>
+              I would like to acknowledge the Traditional Custodians of the land on which I live and work. 
+              I wish to pay my respect to Elders past, present and emerging.
+            </p>
+          </div>
+
+          {/* Footer Links */}
+          <div className="footer-links">
+            <NavLink to="/contact">Contact</NavLink>
+            <a href="https://unsplash.com" target="_blank" rel="noopener noreferrer">Images via Unsplash</a>
+          </div>
+
+          {/* Business Info & Copyright */}
+          <div className="footer-bottom">
+            <p className="footer-abn">ABN 61 655 285 919 | Sergei Tumanov</p>
+            <p className="footer-copyright">
+              &copy; {new Date().getFullYear()} Sergei Tumanov. Built with React & TypeScript.
+            </p>
+          </div>
+        </div>
       </footer>
 
       <BackToTop />

@@ -19,8 +19,8 @@ const projects = [
     description: "This very website! A modern, minimalist, and fully responsive portfolio built with React, TypeScript, and Vite. Features smooth client-side routing, custom animations, and a component-based architecture.",
     tags: ["React", "TypeScript", "Vite", "React Router"],
     image: "/img/project-react.jpg",
-    link: "/contact", // Links to contact page
-    linkText: "Get a Quote", // Custom link text
+    link: "/contact", 
+    linkText: "Get a Quote", 
     status: "Completed",
     type: "quote"
   },
@@ -41,10 +41,11 @@ const projects = [
     description: "Creative design work including website mockups, branding, and visual identity projects.",
     tags: ["Design", "UI/UX", "Branding", "Print"],
     image: "/img/project-design.jpg",
-    link: "/dwnlds/SergeiTumanovDesignPortfolio.pdf", // Links to downloadable portfolio PDF
-    linkText: "Download Portfolio",
+    link: "/dwnlds/SergeiTumanovDesignPortfolio.pdf", 
+    linkText: "Download",
+    figmaLink: "https://www.figma.com/design/fELjhpH0PLjK6BDuGOs7DA/Sergei-Tumanov----CV--UPD0926-?node-id=0-1&t=jChMSk8fZKDfrIWX-1",
     status: "Completed",
-    type: "quote"
+    type: "design" // New type for dual actions
   },
   {
     id: 5,
@@ -63,7 +64,7 @@ const projects = [
     description: "Custom WordPress websites and themes built for various clients including e-commerce, portfolios, and business sites.",
     tags: ["WordPress", "PHP", "MySQL", "CSS"],
     image: "/img/project-wp.jpg",
-    link: "/wordpress-projects", // Links to WordPress projects page
+    link: "/wordpress-projects", 
     linkText: "View Projects",
     status: "Completed",
     type: "wp-projects"
@@ -74,12 +75,10 @@ function Portfolio() {
   const [isVisible, setIsVisible] = useState(false);
   const [showModal, setShowModal] = useState(false);
 
-  // Simple fade-in animation on mount
   useEffect(() => {
     setIsVisible(true);
   }, []);
 
-  // Close modal on Escape key
   useEffect(() => {
     const handleEscape = (e: KeyboardEvent) => {
       if (e.key === 'Escape') setShowModal(false);
@@ -127,10 +126,20 @@ function Portfolio() {
                     <a href={project.link} className="action-link primary">{project.linkText}</a>
                   )}
                   
-                  {project.type === "modal" && (
+                  {/* NEW: Dual action for Design projects */}
+                  {project.type === "design" && (
                     <>
-                      <a href={project.link} className="action-link" download>{project.linkText}</a>
-                      <button onClick={() => setShowModal(true)} className="action-link">{project.githubText}</button>
+                      <a href={project.link} className="action-link primary" download>
+                        {project.linkText}
+                      </a>
+                      <a href={project.figmaLink} target="_blank" rel="noopener noreferrer" className="action-link secondary">
+                        Figma
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ marginLeft: '6px' }}>
+                          <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                          <polyline points="15 3 21 3 21 9"/>
+                          <line x1="10" y1="14" x2="21" y2="3"/>
+                        </svg>
+                      </a>
                     </>
                   )}
                   
@@ -144,7 +153,7 @@ function Portfolio() {
         </div>
       </div>
 
-      {/* Modal for Graphic Design */}
+      {/* Modal for Graphic Design (Kept just in case you want to use it later) */}
       {showModal && (
         <div className="modal-overlay" onClick={() => setShowModal(false)}>
           <div className="modal-content" onClick={(e) => e.stopPropagation()}>
@@ -152,8 +161,6 @@ function Portfolio() {
             <h2>Graphic Design Projects</h2>
             <div className="modal-body">
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-              <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-              <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
               <p className="modal-note">[Your graphic design portfolio content will be added here]</p>
             </div>
           </div>

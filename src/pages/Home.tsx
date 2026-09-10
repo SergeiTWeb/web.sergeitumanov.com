@@ -33,7 +33,7 @@ function Home() {
               >
                 <div className="flip-card-inner">
                   <div className="flip-card-front">
-                    <img src="/img/sergeitumanov.jpg" alt="Sergei Tumanov" />
+                    <img src="/img/sergeitumanovdev.png" alt="Sergei Tumanov Web Developer" />
                     <p className="flip-hint">Click to reveal</p>
                   </div>
                   <div className="flip-card-back">
@@ -61,7 +61,7 @@ function Home() {
               <p>I'm passionate about web development, UI/UX design, and creative digital work such as photography, music production, and visual storytelling. I enjoy combining technical precision with a minimal and thoughtful design approach.</p>
               <p>
                 <div className="hero-actions">
-                  <a href="/cv.pdf" download className="btn-primary hero-btn">
+                  <a href="/dwnlds/Sergei_Tumanov_CV.pdf" download className="btn-primary hero-btn">
                     Download My CV
                   </a>
                 </div>
