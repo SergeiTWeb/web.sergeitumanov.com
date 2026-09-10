@@ -26,10 +26,16 @@ html {
   scroll-behavior: smooth;
 }
 
-body, #root, .app-layout {
+html, body { height: 100%; }
+#root, .app-layout { display: contents; } /* or min-height: 100%; not 100vh */
+body {
   min-height: 100vh;
+  min-height: 100dvh;
   display: flex;
   flex-direction: column;
+}
+
+body, #root, .app-layout {
   font-family: var(--font-primary);
   font-weight: 400;
   line-height: 1.6;
@@ -91,6 +97,7 @@ main {
   top: 0;
   z-index: 100;
   backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 }
 
 .header .wrapper {

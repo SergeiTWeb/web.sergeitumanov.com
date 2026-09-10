@@ -18,8 +18,6 @@ function App() {
           <Route path="clients" element={<Clients />} />
           <Route path="contact" element={<Contact />} />
           <Route path="wordpress-projects" element={<WordPressProjects />} />
-          
-          {/* ✅ CORRECT: The asterisk (*) catches all unmatched routes */}
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
