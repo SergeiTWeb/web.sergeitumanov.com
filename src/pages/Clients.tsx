@@ -14,7 +14,7 @@ const clients = [
     name: "Get Video",
     industry: "Video production company.",
     services: "Website maintenance and technical support.",
-    link: "https://getvideo.com.au",
+    link: "http://getvideo.com.au",
     status: "live"
   },
   {

@@ -33,7 +33,7 @@ function Home() {
               >
                 <div className="flip-card-inner">
                   <div className="flip-card-front">
-                    <img src="/img/sergeitumanovdev.png" alt="Sergei Tumanov Web Developer" />
+                    <img src="/img/sergeitumanovdev1.png" alt="Sergei Tumanov Web Developer" />
                     <p className="flip-hint">Click to reveal</p>
                   </div>
                   <div className="flip-card-back">
