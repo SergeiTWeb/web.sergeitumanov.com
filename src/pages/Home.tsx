@@ -2,7 +2,7 @@ import { useState } from 'react';
 
 // Simple SVG Icon Component to keep code clean
 const Icon = ({ path }: { path: string }) => (
-  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ marginRight: '12px', color: 'var(--color-text)' }}>
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ marginRight: '12px', color: 'var(--color-text)', flexShrink: 0 }}>
     <path d={path} />
   </svg>
 );
@@ -45,7 +45,7 @@ function Home() {
                       <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                         <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
                       </a>
-                      <a href="mailto:your.email@example.com" aria-label="Email">
+                      <a href="mailto:sergeitumanov.web@gmail.com" aria-label="Email">
                         <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
                       </a>
                     </div>
@@ -59,6 +59,13 @@ function Home() {
               <p className="about-intro">Hello, I'm Sergei Tumanov, a web developer focused on building clean, modern and minimal interfaces.</p>
               <p>Recent Full Stack Development graduate from ITMO University, ready to launch my career as a Junior Developer. I bring practical project experience across the full stack and a builder's mindset - I don't just write code, I solve problems. Currently open for full-time junior roles and freelance collaborations.</p>
               <p>I'm passionate about web development, UI/UX design, and creative digital work such as photography, music production, and visual storytelling. I enjoy combining technical precision with a minimal and thoughtful design approach.</p>
+              <p>
+                <div className="hero-actions">
+                  <a href="/cv.pdf" download className="btn-primary hero-btn">
+                    Download My CV
+                  </a>
+                </div>
+              </p>
             </div>
           </div>
         </div>
@@ -106,9 +113,13 @@ function Home() {
               <ul className="skills-list">
                 <li><Icon path="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />HTML5 & CSS3 (responsive layouts)</li>
                 <li><Icon path="M16 18l6-6-6-6M8 6l-6 6 6 6" />JavaScript (vanilla, basic logic)</li>
+                <li><Icon path="M16 18l6-6-6-6M8 6l-6 6 6 6" />React fundamentals</li>
                 <li><Icon path="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />Responsive Web Design</li>
+                <li><Icon path="M16 18l6-6-6-6M8 6l-6 6 6 6" />Wordpress & Elementor</li>
                 <li><Icon path="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" />PHP (basic backend logic, MVC pattern)</li>
                 <li><Icon path="M4 19.5A2.5 2.5 0 0 1 6.5 17H20M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" />Server-side routing & templating</li>
+                <li><Icon path="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />Node.js & Express basics</li>
+                <li><Icon path="M16 18l6-6-6-6M8 6l-6 6 6 6" />MySQL / PostgreSQL (queries, basic schema)</li>
               </ul>
             </div>
             
@@ -122,16 +133,16 @@ function Home() {
                 <li><Icon path="M6 3v12M18 9a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM6 21a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM18 9a9 9 0 0 1-9 9" />Git & GitHub</li>
                 <li><Icon path="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" />Apache/Nginx basics</li>
                 <li><Icon path="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />PHP Dev Server / XAMPP / Mailpit</li>
-                <li><Icon path="M4 19.5A2.5 2.5 0 0 1 6.5 17H20M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" />MVC Architecture pattern</li>
+                <li><Icon path="M4 17l6-6-6-6M12 19h8" />Linux (basic development setup)</li>
+                <li><Icon path="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" />Docker (basic project setup)</li>
               </ul>
             </div>
           </div>
           
-          <div className="learning-section">
+          <div className="learning-section" style={{ display: 'none' }}>
             <h2 className="section-title">Currently In Progress</h2>
             <ul className="skills-list">
-              <li><Icon path="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />Node.js & Express basics</li>
-              <li><Icon path="M16 18l6-6-6-6M8 6l-6 6 6 6" />React fundamentals</li>
+              <li><Icon path="M16 18l6-6-6-6M8 6l-6 6 6 6" />Insert here</li>
             </ul>
           </div>
         </div>

@@ -27,6 +27,15 @@ const clients = [
     status: "live"
   },
   {
+    id: 21,
+    logo: "/img/clients/client-wilvarinvocal.png",
+    name: "Wilvarin Vocal",
+    industry: "Wilvarin Vocal School is a music school that provides vocal training and education.",
+    services: "Design, and technical support.",
+    link: "https://wilvarinvocal.ru/",
+    status: "live"
+  },
+  {
     id: 4,
     logo: "/img/clients/client-get-video.png",
     name: "Get Video",

@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="Sergei Tumanov | GULP Project Starter"
+      content="Modern Gulp starter kit for static websites"
+    />
+    <title>GULP Project Starter</title>
+    <link rel="preload" href="css/main.css" as="style" />
+    <link rel="stylesheet" href="css/main.css" />
+    <script src="js/main.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <h1 class="logo">GULP Project Starter</h1>
+        <nav class="site-nav" style="text-transform: lowercase;">
+          <ul class="nav-list">
+            <li class="nav-item"><a class="nav-link" href="/portfolio">Return</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#features">Features</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#demo">Demo</a></li>
+            <li class="nav-item"><a class="nav-link" href="#news">Process</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="main-content">
+      <section class="hero" id="hero">
+        <div class="container">
+          <h1 class="hero-title">Modern GULP Project Starter</h1>
+          <p class="hero-subtitle">Fast, modular, production-ready</p>
+        </div>
+      </section>
+      <section class="features" id="features">
+        <div class="container">
+          <h2 class="section-title">Why This Starter?</h2>
+          <ul class="features-grid">
+            <li class="feature-card">
+              <h3>🔄 Live Reload</h3>
+              <p>Auto-update on file changes</p>
+            </li>
+            <li class="feature-card">
+              <h3>🎨 Dual Workflow</h3>
+              <p>Pug/SCSS or HTML/CSS — your choice</p>
+            </li>
+            <li class="feature-card">
+              <h3>🖼️ WebP Ready</h3>
+              <p>Auto image optimization</p>
+            </li>
+            <li class="feature-card">
+              <h3>🔤 Font Pipeline</h3>
+              <p>TTF → WOFF/WOFF2 + @font-face</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="image-demo" id="demo">
+
+        <div class="container text-center hero">
+            <h2>Coding / Project handling</h2>
+            <p>
+                This landing page was built using Pug, SCSS, and JavaScript, powered by a custom Gulp-based workflow.
+                The setup includes live reload, asset optimization, and a structured development environment.
+            </p>
+        </div>
+
+        <div class="container">
+          <h2 class="section-title">Image Optimization</h2>
+          <div class="image-grid">
+            <figure class="image-card">
+              <picture>
+                <source srcset="img/back.webp" type="image/webp" />
+                <img
+                  src="img/projects/gulp/back.webp"
+                  alt="Background preview"
+                  loading="lazy"
+                />
+              </picture>
+              <figcaption>| JPG → WebP</figcaption>
+            </figure>
+            <figure class="image-card">
+              <picture>
+                <source srcset="img/js.webp" type="image/webp" />
+                <img src="img/js.webp" alt="Code preview" loading="lazy" />
+              </picture>
+              <figcaption>| Lossless compression</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+      <section class="news-section" id="news">
+        <div class="container">
+          <h2 class="section-title">Development Process</h2>
+          <ul class="news">
+            <li class="news-item">
+              <h3>Project Setup</h3>
+              <p>Setting up a structured development environment with Gulp, including task automation,
+                live reload, and asset management.</p>
+            </li>
+            <li class="news-item">
+              <h3>Development</h3>
+              <p>Building responsive layouts using Pug and SCSS or HTML and CSS with a focus on clean structure
+                and maintainable code.</p>
+            </li>
+            <li class="news-item">
+              <h3>Optimization</h3>
+              <p>Preparing the project for production with minification, image optimization,
+                and performance improvements.</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="cta" id="contact">
+        <div class="container text-center">
+          <h2>Ready to start?</h2>
+          <p>Clone, customize, deploy — in minutes.</p>
+          <a
+            class="btn btn-primary"
+            href="https://github.com/SergeiTWeb/gulp-project"
+            >View on GitHub</a
+          >
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="container">
+        <p class="copyright">
+          &copy; 2026
+          <a
+            href="https://web.sergeitumanov.com/"
+            target="_blank"
+            rel="noopener"
+            >Sergei Tumanov</a
+          >. All rights reserved.
+        </p>
+        <div class="footer-links">
+          <small
+            >Built with
+            <a
+              href="https://github.com/SergeiTWeb/gulp-project"
+              target="_blank"
+              rel="noopener"
+              >Gulp Starter Kit</a
+            ></small
+          >
+          •
+          <a href="https://unsplash.com/" target="_blank" rel="noopener"
+            >Images from Unsplash</a
+          >
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

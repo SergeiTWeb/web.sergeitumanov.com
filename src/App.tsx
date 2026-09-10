@@ -4,6 +4,7 @@ import Home from './pages/Home';
 import Portfolio from './pages/Portfolio';
 import Clients from './pages/Clients';
 import Contact from './pages/Contact';
+import WordPressProjects from './pages/WordPressProjects';
 import NotFound from './pages/NotFound';
 import './App.css';
 
@@ -16,6 +17,9 @@ function App() {
           <Route path="portfolio" element={<Portfolio />} />
           <Route path="clients" element={<Clients />} />
           <Route path="contact" element={<Contact />} />
+          <Route path="wordpress-projects" element={<WordPressProjects />} />
+          
+          {/* ✅ CORRECT: The asterisk (*) catches all unmatched routes */}
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
