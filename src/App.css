@@ -77,6 +77,10 @@ main {
   width: 100%;
 }
 
+.topGap {
+  padding: 4rem 0 6rem;
+}
+
 /* ==========================================================================
    3. HEADER & NAVIGATION
 ========================================================================== */
@@ -1513,4 +1517,114 @@ main {
   .footer-acknowledgment { padding-bottom: 1.25rem; }
   .footer-acknowledgment p { font-size: 0.75rem; line-height: 1.5; }
   .footer-links { gap: 0.75rem; }
+}
+
+/* ==========================================================================
+   MOBILE FIXES (Overrides for Mobile Devices Only)
+========================================================================== */
+
+/* Tablet and Mobile (Max-width 968px) */
+@media (max-width: 968px) {
+  /* FIX 1: Ensure Profile Image Shows on Mobile */
+  .about-image-wrapper {
+    position: relative !important; /* Forces it out of sticky mode which can hide it */
+    top: 0 !important;
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto 2rem auto;
+    display: block;
+  }
+
+  .flip-card {
+    width: 100%;
+    height: 400px; /* Ensures the card has enough height to render the image */
+    display: block;
+  }
+
+  .flip-card-front img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+}
+
+/* Mobile Only (Max-width 768px) */
+@media (max-width: 768px) {
+  /* FIX 2: Ensure Hamburger Menu is Visible and Header Doesn't Squish */
+  .header .wrapper {
+    flex-wrap: nowrap; /* Prevents the logo and menu button from wrapping to a new line */
+  }
+  
+  .logo-container {
+    flex-shrink: 0; /* Prevents the logo from shrinking and pushing the button off-screen */
+  }
+
+  .menu-toggle {
+    display: flex !important; /* Forces the hamburger icon to show */
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    font-size: 1.5rem;
+    color: var(--color-text);
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    flex-shrink: 0; /* Prevents the button from shrinking */
+    z-index: 101;
+  }
+
+  /* FIX 3: Reduce Gap Between Sections (Skills, Experience, etc.) */
+  .skills-section, 
+  .experience-section,
+  .education-section,
+  .hobbies-section {
+    padding: 2rem 0 !important; /* Reduces the massive 4rem gap to a clean 2rem */
+  }
+}
+/* ==========================================================================
+   MOBILE FIX: CENTERED CLIENTS LIST
+========================================================================== */
+@media (max-width: 768px) {
+  .client-row {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 2.5rem 0;
+    justify-items: center; /* Centers the logo, text block, and button */
+    text-align: center;    /* Centers the text inside the blocks */
+  }
+
+  .client-logo {
+    width: 70px;
+    height: 70px;
+  }
+
+  /* Centers the Name and Year */
+  .client-header {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  /* Stacks the "Services" label and text neatly in the center */
+  .client-services {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .services-label {
+    align-self: center;
+  }
+
+  /* Centers the Action Buttons */
+  .client-action,
+  .view-project,
+  .view-project.archived,
+  .view-project.disabled {
+    justify-content: center;
+    width: 100%;
+    max-width: 220px;
+  }
 }

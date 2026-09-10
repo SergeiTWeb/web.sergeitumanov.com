@@ -3,45 +3,45 @@ import { Link } from 'react-router-dom';
 const wordpressProjects = [
   {
     id: 1,
-    name: "Kerry & Co Design",
-    url: "https://kerrycodesign.com",
-    screenshot: "/img/projects/wp-kerry-co.png",
-    description: "Wallcoverings, textiles, and home accessories retailer with e-commerce functionality."
-  },
-  {
-    id: 2,
-    name: "NRZK Productions",
-    url: "https://nrzkproduction.com",
-    screenshot: "/img/projects/wp-nrzk.png",
-    description: "Sound and music production company website."
-  },
-  {
-    id: 3,
-    name: "Callum Lee Gow",
-    url: "https://callumleegow.com",
-    screenshot: "/img/projects/wp-callum.png",
-    description: "Media composition and sound design portfolio."
-  },
-  {
-    id: 4,
     name: "Blood Runs Dry",
     url: "https://bloodrunsdry.com",
     screenshot: "/img/projects/wp-blood.png",
     description: "Melbourne-based groove metal band website."
   },
   {
-    id: 5,
+    id: 2,
     name: "NCTMMRN",
     url: "https://nctmmrn.com",
     screenshot: "/img/projects/wp-nctmmrn.png",
     description: "Independent record label website."
   },
   {
-    id: 6,
+    id: 3,
     name: "Sergei Tumanov",
     url: "https://sergeitumanov.com",
     screenshot: "/img/projects/wp-sergei.png",
     description: "Personal portfolio and sound artist website."
+  },
+  {
+    id: 4,
+    name: "Kerry & Co Design",
+    url: "https://kerrycodesign.com",
+    screenshot: "/img/projects/wp-kerry-co.png",
+    description: "Wallcoverings, textiles, and home accessories retailer with e-commerce functionality."
+  },
+  {
+    id: 5,
+    name: "NRZK Productions",
+    url: "https://nrzkproduction.com",
+    screenshot: "/img/projects/wp-nrzk.png",
+    description: "Sound and music production company website."
+  },
+  {
+    id: 6,
+    name: "Callum Lee Gow",
+    url: "https://callumleegow.com",
+    screenshot: "/img/projects/wp-callum.png",
+    description: "Media composition and sound design portfolio."
   }
 ];
 

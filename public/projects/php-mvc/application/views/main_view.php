@@ -44,6 +44,23 @@
 <section class="getting-started">
     <h2>Getting Started</h2>
     <div class="code-block">
+        <pre><code>
+            // Install XAMPP
+            // Place files in htdocs folder
+            // Open http://localhost/phpmvc/
+
+            // Create new controller:
+            // application/controllers/controller_yourpage.php
+
+            // Create new model:
+            // application/models/model_yourpage.php
+
+            // Create new view:
+            // application/views/yourpage_view.php
+
+            // Debug:
+            // Open http://localhost/phpmvc/debug.php
+        </code></pre>
     </div>
     <a href="https://github.com/SergeiTWeb/phpMvc" class="btn btn-secondary">Download on GitHub</a>
 </section>

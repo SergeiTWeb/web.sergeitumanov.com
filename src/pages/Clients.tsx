@@ -1,24 +1,6 @@
 const clients = [
   {
     id: 1,
-    logo: "/img/clients/client-kerry-co.svg",
-    name: "Kerry & Co Design",
-    industry: "Wallcoverings, textiles, and home accessories retailer.",
-    services: "E-commerce functionality implementation, maintenance, and technical support.",
-    link: "https://kerrycodesign.com",
-  status: "live" // Options: "live", "coming-soon", "archived"
-  },
-  {
-    id: 2,
-    logo: "/img/clients/client-dr-bon-mott.png",
-    name: "Dr Bon Mott",
-    industry: "Professional artist portfolio.",
-    services: "Ongoing website maintenance and technical support.",
-    link: "https://www.bonmott.com",
-    status: "live"
-  },
-  {
-    id: 3,
     logo: "/img/clients/client-nrzk.jpg",
     name: "NRZK Productions",
     industry: "Sound and music production company.",
@@ -27,16 +9,7 @@ const clients = [
     status: "live"
   },
   {
-    id: 21,
-    logo: "/img/clients/client-wilvarinvocal.png",
-    name: "Wilvarin Vocal",
-    industry: "Wilvarin Vocal School is a music school that provides vocal training and education.",
-    services: "Design, and technical support.",
-    link: "https://wilvarinvocal.ru/",
-    status: "live"
-  },
-  {
-    id: 4,
+    id: 2,
     logo: "/img/clients/client-get-video.png",
     name: "Get Video",
     industry: "Video production company.",
@@ -45,16 +18,7 @@ const clients = [
     status: "live"
   },
   {
-    id: 5,
-    logo: "/img/clients/client-callum-lee-gow.jpg",
-    name: "Callum Lee Gow",
-    industry: "Media composition and sound design portfolio.",
-    services: "Custom development and technical support.",
-    link: "https://callumleegow.com",
-    status: "live"
-  },
-  {
-    id: 6,
+    id: 3,
     logo: "/img/clients/client-blood-runs-dry.jpg",
     name: "Blood Runs Dry",
     industry: "Melbourne-based groove metal band.",
@@ -63,7 +27,7 @@ const clients = [
     status: "live"
   },
   {
-    id: 7,
+    id: 4,
     logo: "/img/clients/client-nctmmrn.jpg",
     name: "NCTMMRN",
     industry: "Independent record label.",
@@ -72,7 +36,7 @@ const clients = [
     status: "live"
   },
   {
-    id: 8,
+    id: 5,
     logo: "/img/clients/client-sergei-sound.jpg",
     name: "Sergei Tumanov | Sound Artist",
     industry: "Sound artist personal portfolio.",
@@ -81,7 +45,45 @@ const clients = [
     status: "live"
   },
   {
+    id: 6,
+    logo: "/img/clients/client-dr-bon-mott.png",
+    name: "Dr Bon Mott",
+    industry: "Professional artist portfolio.",
+    services: "Ongoing website maintenance and technical support.",
+    link: "https://www.bonmott.com",
+    status: "live"
+  },
+  {
+    id: 7,
+    logo: "/img/clients/client-kerry-co.svg",
+    name: "Kerry & Co Design",
+    industry: "Wallcoverings, textiles, and home accessories retailer.",
+    services: "E-commerce functionality implementation, maintenance, and technical support.",
+    link: "https://kerrycodesign.com",
+  status: "live" // Options: "live", "coming-soon", "archived"
+  },
+
+  {
+    id: 8,
+    logo: "/img/clients/client-wilvarinvocal.png",
+    name: "Wilvarin Vocal",
+    industry: "Wilvarin Vocal School is a music school that provides vocal training and education.",
+    services: "Design, and technical support.",
+    link: "https://wilvarinvocal.ru/",
+    status: "live"
+  },
+
+  {
     id: 9,
+    logo: "/img/clients/client-callum-lee-gow.jpg",
+    name: "Callum Lee Gow",
+    industry: "Media composition and sound design portfolio.",
+    services: "Custom development and technical support.",
+    link: "https://callumleegow.com",
+    status: "live"
+  },
+  {
+    id: 10,
     logo: "/img/clients/client-sergei-photo.jpg",
     name: "Sergei Tumanov | Photographer",
     industry: "Photography portfolio.",
@@ -90,7 +92,7 @@ const clients = [
     status: "live"
   },
   {
-    id: 10,
+    id: 11,
     logo: "/img/clients/client-biol-group.jpg",
     name: "BIOL GROUP",
     industry: "Meat and dairy products supplier.",
@@ -99,7 +101,7 @@ const clients = [
     status: "live"
   },
   {
-    id: 11,
+    id: 12,
     logo: "/img/clients/client-001mm.png",
     name: "001MM",
     industry: "Professional milling services.",
@@ -108,7 +110,7 @@ const clients = [
     status: "live"
   },
   {
-    id: 12,
+    id: 13,
     logo: "/img/clients/client-tgap.avif",
     name: "The Great Aboriginal People",
     industry: "Independent, Indigenous-led screen enterprise and video production project.",
@@ -117,7 +119,7 @@ const clients = [
     status: "archived"
   },
   {
-    id: 13,
+    id: 14,
     logo: "/img/clients/client-trifo.jpg",
     name: "TRIFO",
     industry: "Clothing retailer.",
@@ -126,7 +128,7 @@ const clients = [
     status: "archived"
   },
   {
-    id: 14,
+    id: 15,
     logo: "/img/clients/client-fabriki-palto.jpg",
     name: "ФАБРИКИ ПАЛЬТО",
     industry: "Clothing retailer.",
@@ -135,7 +137,7 @@ const clients = [
     status: "archived"
   },
   {
-    id: 15,
+    id: 16,
     logo: "/img/clients/client-dinner-for-two.jpg",
     name: "Dinner For Two",
     industry: "Melbourne matchmaking service.",
@@ -144,7 +146,7 @@ const clients = [
     status: "archived"
   },
   {
-    id: 16,
+    id: 17,
     logo: "/img/clients/client-dinner-at-eight.jpg",
     name: "Dinner at Eight",
     industry: "Exclusive dinner club for singles.",
@@ -153,7 +155,7 @@ const clients = [
     status: "archived"
   },
   {
-    id: 17,
+    id: 18,
     logo: "/img/clients/client-dinner-with-oscar.jpg",
     name: "Dinner with Oscar",
     industry: "Same-sex dating service in Australia.",
@@ -162,7 +164,7 @@ const clients = [
     status: "archived"
   },
   {
-    id: 18,
+    id: 19,
     logo: "/img/clients/placeholder.png",
     name: "Коломяги Спорт",
     industry: "Local sport stadium.",
@@ -171,7 +173,7 @@ const clients = [
     status: "archived"
   },
   {
-    id: 19,
+    id: 20,
     logo: "/img/clients/client-nmcs.jpg",
     name: "NMCS",
     industry: "School of chess.",
@@ -180,7 +182,7 @@ const clients = [
     status: "archived"
   },
   {
-    id: 20,
+    id: 21,
     logo: "/img/clients/placeholder.png",
     name: "NCTMMRN Web-store",
     industry: "Music records retailer.",
@@ -192,7 +194,7 @@ const clients = [
 
 function Clients() {
   return (
-    <div className="clients-page fade-in">
+    <div className="clients-page topGap fade-in">
       <div className="wrapper">
         <h2 className="section-title">Clients & Collaborations</h2>
         <p className="clients-subtitle">A selection of companies, artists, and individuals I've had the pleasure of working with.</p>
@@ -201,14 +203,18 @@ function Clients() {
           {clients.map((client) => (
             <div key={client.id} className="client-row">
               <div className="client-logo">
-                <img 
-                  src={client.logo} 
-                  alt={`${client.name} logo`} 
-                  onError={(e) => {
-                    (e.target as HTMLImageElement).style.display = 'none';
-                    (e.target as HTMLImageElement).nextElementSibling!.style.display = 'flex';
-                  }} 
-                />
+              <img 
+                src={client.logo} 
+                alt={`${client.name} logo`} 
+                onError={(e) => {
+                  const img = e.target as HTMLImageElement;
+                  img.style.display = 'none';
+                  const fallback = img.nextElementSibling as HTMLElement;
+                  if (fallback) {
+                    fallback.style.display = 'flex';
+                  }
+                }} 
+              />
                 <span className="logo-fallback">{client.name.charAt(0)}</span>
               </div>
               

@@ -88,7 +88,7 @@ function Portfolio() {
   }, []);
 
   return (
-    <div className={`portfolio-page ${isVisible ? 'fade-in' : ''}`}>
+    <div className={`portfolio-page topGap ${isVisible ? 'fade-in' : ''}`}>
       <div className="wrapper">
         <h2 className="section-title">Selected Work</h2>
         <p className="portfolio-subtitle">A collection of projects showcasing my journey in web development.</p>
