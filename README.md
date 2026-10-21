@@ -44,7 +44,7 @@ src/
 If you'd like to run this project locally or review the code, follow these steps:
 1. Clone the repository:
 ```bash
-   git clone https://github.com/SergeiTWeb/portfolio.git
+   git clone https://github.com/SergeiTWeb/web.sergeitumanov.com.git
    cd portfolio
 ```
 2. Install dependencies:
@@ -67,5 +67,6 @@ I am always eager to connect with fellow developers, recruiters, and potential c
 Email: [website](https://sergeitumanov.web@gmail.com/)
 LinkedIn: [linkedin](https://www.linkedin.com/in/sergei-tumanov/)
 GitHub: github.com/SergeiTWeb
+If you like this build you can [buy me a coffee](https://www.paypal.com/paypalme/nctmmrn)
 
 Built with ❤️ using React & TypeScript.
