@@ -105,7 +105,7 @@ function Portfolio() {
                 <div className="card-actions">
                   {project.type === "standard" && (
                     <>
-                      <a href={project.link} className="action-link" target={project.link.startsWith('http') ? '_blank' : undefined} rel="noopener noreferrer">
+                      <a href={project.link} className="action-link" target={project.link && project.link.startsWith('http') ? '_blank' : undefined} rel="noopener noreferrer">
                         Live Demo
                       </a>
                       <a href={project.github} className="action-link" target="_blank" rel="noopener noreferrer">GitHub</a>
