@@ -65,8 +65,12 @@ npm run build
 I am always eager to connect with fellow developers, recruiters, and potential clients.
 
 Email: [website](https://sergeitumanov.web@gmail.com/)
+
 LinkedIn: [linkedin](https://www.linkedin.com/in/sergei-tumanov/)
+
 GitHub: github.com/SergeiTWeb
+
 If you like this build you can [buy me a coffee](https://www.paypal.com/paypalme/nctmmrn)
+
 
 Built with ❤️ using React & TypeScript.
