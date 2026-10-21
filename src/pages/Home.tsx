@@ -17,7 +17,7 @@ function Home() {
         <div className="wrapper">
           <h1 className="hero-title">
             Sergei Tumanov
-            <small className="hero-subtitle">Web Developer & Designer</small>
+            <small className="hero-subtitle">Full-Stack Web Developer & Technical QA Specialist</small>
           </h1>
         </div>
       </section>
@@ -56,9 +56,9 @@ function Home() {
             
             <div className="about-content">
               <h2>About Me</h2>
-              <p className="about-intro">Hello, I'm Sergei Tumanov, a web developer focused on building clean, modern and minimal interfaces.</p>
-              <p>Recent Full Stack Development graduate from ITMO University, ready to launch my career as a Junior Developer. I bring practical project experience across the full stack and a builder's mindset - I don't just write code, I solve problems. Currently open for full-time junior roles and freelance collaborations.</p>
-              <p>I'm passionate about web development, UI/UX design, and creative digital work such as photography, music production, and visual storytelling. I enjoy combining technical precision with a minimal and thoughtful design approach.</p>
+              <p className="about-intro">Hello, I'm Sergei Tumanov, a Full-Stack Web Developer and Technical QA Specialist focused on building clean, modern, and user-centric web interfaces.</p>
+              <p>Recent Full Stack Development graduate from ITMO University with 9+ years of practical experience in web project coordination, client technical support, and manual testing. I bring practical project experience across the full stack and a builder’s mindset — I don't just write code, I solve problems.</p>
+              <p>I'm passionate about web development, UI/UX design, and creative digital work such as music production and visual storytelling. I enjoy combining technical precision with a minimal and thoughtful design approach.</p>
               <p>
                 <div className="hero-actions">
                   <a href="/dwnlds/Sergei_Tumanov_CV.pdf" download className="btn-primary hero-btn">
@@ -78,27 +78,61 @@ function Home() {
           <div className="timeline">
             <div className="timeline-item">
               <div className="timeline-year">2026</div>
-              <div className="timeline-content"><h3>ITMO University | Russia</h3><p className="timeline-degree">Diploma in Web-Development (Full Stack)</p></div>
+              <div className="timeline-content">
+                <h3>ITMO University | Russia</h3>
+                <p className="timeline-degree">Diploma of Information Technology: Web Development / Full-Stack</p>
+              </div>
             </div>
             <div className="timeline-item">
               <div className="timeline-year">2022</div>
-              <div className="timeline-content"><h3>Holmesglen | Australia</h3><p className="timeline-degree">Certificate IV in IT (Web Development)</p></div>
-            </div>
-            <div className="timeline-item">
-              <div className="timeline-year">2021</div>
-              <div className="timeline-content"><h3>Melbourne Polytechnic | Australia</h3><p className="timeline-degree">Certificate IV in Sound Production</p></div>
-            </div>
-            <div className="timeline-item">
-              <div className="timeline-year">2020</div>
-              <div className="timeline-content"><h3>Berklee Online | USA</h3><p className="timeline-degree">Certificate in Music Production</p></div>
+              <div className="timeline-content">
+                <h3>Holmesglen Institute of TAFE | Australia</h3>
+                <p className="timeline-degree">Certificate IV in Information Technology: Web Development</p>
+              </div>
             </div>
             <div className="timeline-item">
               <div className="timeline-year">2011</div>
-              <div className="timeline-content"><h3>Interregional Institute of Economics and Law | Russia</h3><p className="timeline-degree">Diploma in IT (Systems & Network Administration)</p></div>
+              <div className="timeline-content">
+                <h3>Interregional Institute of Economics & Law | Russia</h3>
+                <p className="timeline-degree">Diploma of Computer and Information Sciences (ACS Accredited)</p>
+              </div>
             </div>
             <div className="timeline-item">
               <div className="timeline-year">2005</div>
-              <div className="timeline-content"><h3>Saint Petersburg State University of Service and Economics | Russia</h3><p className="timeline-degree">Specialist Degree in Management</p></div>
+              <div className="timeline-content">
+                <h3>Saint-Petersburg State University of Service and Economics | Russia</h3>
+                <p className="timeline-degree">Specialist Diploma in Business Administration, Management and Operations</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Certificates Section */}
+      <section className="education-section">
+        <div className="wrapper">
+          <h2 className="section-title">Certificates & Training</h2>
+          <div className="timeline">
+            <div className="timeline-item">
+              <div className="timeline-year">2026</div>
+              <div className="timeline-content">
+                <h3>Microsoft QA / Software Tester Specialization</h3>
+                <p className="timeline-degree">Coursera</p>
+              </div>
+            </div>
+            <div className="timeline-item">
+              <div className="timeline-year">2026</div>
+              <div className="timeline-content">
+                <h3>Google AI Professional Certificate</h3>
+                <p className="timeline-degree">Coursera</p>
+              </div>
+            </div>
+            <div className="timeline-item">
+              <div className="timeline-year">2021</div>
+              <div className="timeline-content">
+                <h3>Melbourne Polytechnic | Australia</h3>
+                <p className="timeline-degree">Certificate IV in Music Industry: Sound Production</p>
+              </div>
             </div>
           </div>
         </div>
@@ -111,57 +145,29 @@ function Home() {
             <div className="skills-column">
               <h2 className="section-title">Core Skills</h2>
               <ul className="skills-list">
-                <li><Icon path="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />HTML5 & CSS3 (responsive layouts)</li>
-                <li><Icon path="M16 18l6-6-6-6M8 6l-6 6 6 6" />JavaScript (vanilla, basic logic)</li>
-                <li><Icon path="M16 18l6-6-6-6M8 6l-6 6 6 6" />React fundamentals</li>
-                <li><Icon path="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />Responsive Web Design</li>
-                <li><Icon path="M16 18l6-6-6-6M8 6l-6 6 6 6" />Wordpress & Elementor</li>
-                <li><Icon path="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" />PHP (basic backend logic, MVC pattern)</li>
-                <li><Icon path="M4 19.5A2.5 2.5 0 0 1 6.5 17H20M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" />Server-side routing & templating</li>
-                <li><Icon path="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />Node.js & Express basics</li>
-                <li><Icon path="M16 18l6-6-6-6M8 6l-6 6 6 6" />MySQL / PostgreSQL (queries, basic schema)</li>
+                <li><Icon path="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />JavaScript (ES6+), React, TypeScript</li>
+                <li><Icon path="M16 18l6-6-6-6M8 6l-6 6 6 6" />HTML5, CSS3, Responsive Web Design, Bootstrap</li>
+                <li><Icon path="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" />PHP (MVC Pattern), REST APIs</li>
+                <li><Icon path="M4 19.5A2.5 2.5 0 0 1 6.5 17H20M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" />WordPress & WooCommerce Customization</li>
+                <li><Icon path="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />QA: Manual Functional, E2E & UI/UX Testing</li>
+                <li><Icon path="M16 18l6-6-6-6M8 6l-6 6 6 6" />Cross-Browser Compatibility & Technical SEO</li>
+                <li><Icon path="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" />Git & GitHub Version Control</li>
               </ul>
             </div>
             
             <div className="skills-column">
               <h2 className="section-title">Tools & Workflow</h2>
               <ul className="skills-list">
-                <li><Icon path="M12 19l7-7 3 3-7 7-3-3z" />Figma & Photoshop</li>
-                <li><Icon path="M16 18l6-6-6-6M8 6l-6 6 6 6" />VS Code + Extensions</li>
-                <li><Icon path="M4 19.5A2.5 2.5 0 0 1 6.5 17H20M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" />Pug & Sass/SCSS</li>
-                <li><Icon path="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />Gulp (custom starter workflow)</li>
-                <li><Icon path="M6 3v12M18 9a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM6 21a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM18 9a9 9 0 0 1-9 9" />Git & GitHub</li>
-                <li><Icon path="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" />Apache/Nginx basics</li>
-                <li><Icon path="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />PHP Dev Server / XAMPP / Mailpit</li>
-                <li><Icon path="M4 17l6-6-6-6M12 19h8" />Linux (basic development setup)</li>
-                <li><Icon path="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" />Docker (basic project setup)</li>
+                <li><Icon path="M12 19l7-7 3 3-7 7-3-3z" />VS Code & Modern Development Environments</li>
+                <li><Icon path="M16 18l6-6-6-6M8 6l-6 6 6 6" />Figma, Photoshop & UI/UX Design Tools</li>
+                <li><Icon path="M4 19.5A2.5 2.5 0 0 1 6.5 17H20M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" />WordPress Ecosystem & Elementor</li>
+                <li><Icon path="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />QA & Bug Reporting Tools</li>
+                <li><Icon path="M6 3v12M18 9a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM6 21a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM18 9a9 9 0 0 1-9 9" />REST API Clients (e.g., Postman)</li>
+                <li><Icon path="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" />Vite, React Router & Component Architecture</li>
+                <li><Icon path="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />Technical Troubleshooting & System Diagnostics</li>
               </ul>
             </div>
           </div>
-          
-          <div className="learning-section" style={{ display: 'none' }}>
-            <h2 className="section-title">Currently In Progress</h2>
-            <ul className="skills-list">
-              <li><Icon path="M16 18l6-6-6-6M8 6l-6 6 6 6" />Insert here</li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      {/* Development Experience */}
-      <section className="experience-section">
-        <div className="wrapper">
-          <h2 className="section-title">Development Experience</h2>
-          <ul className="experience-list">
-            <li>Built custom Gulp-based development environment for static websites</li>
-            <li>Experience with GitHub for version control and project management</li>
-            <li>Basic experience with Docker and project setup using containerized images</li>
-            <li>Familiar with Linux environment (basic usage and development setup)</li>
-            <li>Problem-solving mindset and ability to debug issues independently</li>
-            <li>Experience using AI tools to support development workflow and learning</li>
-            <li>Built a lightweight PHP MVC framework from scratch (routing, views, controllers)</li>
-            <li>Implemented hybrid projects: static Gulp frontend + PHP backend</li>
-          </ul>
         </div>
       </section>
 

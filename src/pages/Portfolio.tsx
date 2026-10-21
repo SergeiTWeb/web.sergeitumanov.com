@@ -1,28 +1,25 @@
 import { useEffect, useState } from 'react';
 
-// Project Data based on your old site
 const projects = [
   {
     id: 1,
+    title: "The TieBreaker Project",
+    description: "An AI-powered decision intelligence workbench built with React, TypeScript, and Express. Transforms complex choices into structured, mathematically-backed comparisons.",
+    tags: ["React", "TypeScript", "Web App"],
+    image: "/img/tie-breaker.jpg",
+    link: "https://thetiebreaker.sergeitumanov.com", 
+    github: "https://github.com/SergeiTWeb/thetiebreaker",
+    type: "standard"
+  },
+  {
+    id: 2,
     title: "Gulp Starter Kit",
     description: "Custom development workflow for static websites with Pug, SCSS and JS automation.",
     tags: ["Gulp", "Pug", "SCSS", "JavaScript"],
     image: "/img/project-gulp.jpg", 
     link: "/projects/gulp-starter/index.html", 
     github: "https://github.com/SergeiTWeb/gulp-project",
-    status: "Completed",
     type: "standard"
-  },
-  {
-    id: 2,
-    title: "React Portfolio Website",
-    description: "This very website! A modern, minimalist, and fully responsive portfolio built with React, TypeScript, and Vite. Features smooth client-side routing, custom animations, and a component-based architecture.",
-    tags: ["React", "TypeScript", "Vite", "React Router"],
-    image: "/img/project-react.jpg",
-    link: "/contact", 
-    linkText: "Get a Quote", 
-    status: "Completed",
-    type: "quote"
   },
   {
     id: 3,
@@ -32,7 +29,6 @@ const projects = [
     image: "/img/project-php.jpg",
     link: "/projects/php-mvc/", 
     github: "https://github.com/SergeiTWeb/phpMvc",
-    status: "Completed",
     type: "standard"
   },
   {
@@ -44,8 +40,7 @@ const projects = [
     link: "/dwnlds/SergeiTumanovDesignPortfolio.pdf", 
     linkText: "Download",
     figmaLink: "https://www.figma.com/design/fELjhpH0PLjK6BDuGOs7DA/Sergei-Tumanov----CV--UPD0926-?node-id=0-1&t=jChMSk8fZKDfrIWX-1",
-    status: "Completed",
-    type: "design" // New type for dual actions
+    type: "design"
   },
   {
     id: 5,
@@ -53,10 +48,8 @@ const projects = [
     description: "Interactive React applications showcasing modern frontend development patterns and component-based architecture.",
     tags: ["React", "TypeScript", "JavaScript"],
     image: "/img/project-reactApp.jpg",
-    link: "https://mycollection.sergeitumanov.com",
-    github: "https://github.com/SergeiTWeb/myCollection",
-    status: "Completed",
-    type: "standard"
+    experimentsLink: "/experiments", 
+    type: "experiments"
   },
   {
     id: 6,
@@ -66,7 +59,6 @@ const projects = [
     image: "/img/project-wp.jpg",
     link: "/wordpress-projects", 
     linkText: "View Projects",
-    status: "Completed",
     type: "wp-projects"
   }
 ];
@@ -97,9 +89,7 @@ function Portfolio() {
           {projects.map((project) => (
             <div key={project.id} className="portfolio-card">
               <div className="card-image-wrapper">
-                <div className="card-placeholder" style={{backgroundImage: `url(${project.image})`}}>
-                  <span className="status-badge">{project.status}</span>
-                </div>
+                <div className="card-placeholder" style={{backgroundImage: `url(${project.image})`}}></div>
               </div>
               
               <div className="card-content">
@@ -126,7 +116,6 @@ function Portfolio() {
                     <a href={project.link} className="action-link primary">{project.linkText}</a>
                   )}
                   
-                  {/* NEW: Dual action for Design projects */}
                   {project.type === "design" && (
                     <>
                       <a href={project.link} className="action-link primary" download>
@@ -146,6 +135,10 @@ function Portfolio() {
                   {project.type === "wp-projects" && (
                     <a href={project.link} className="action-link primary">{project.linkText}</a>
                   )}
+
+                  {project.type === "experiments" && (
+                    <a href={project.experimentsLink} className="action-link primary">View Experiments</a>
+                  )}
                 </div>
               </div>
             </div>
@@ -153,7 +146,6 @@ function Portfolio() {
         </div>
       </div>
 
-      {/* Modal for Graphic Design (Kept just in case you want to use it later) */}
       {showModal && (
         <div className="modal-overlay" onClick={() => setShowModal(false)}>
           <div className="modal-content" onClick={(e) => e.stopPropagation()}>

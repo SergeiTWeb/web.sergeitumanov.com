@@ -45,7 +45,7 @@ If you'd like to run this project locally or review the code, follow these steps
 1. Clone the repository:
 ```bash
    git clone https://github.com/SergeiTWeb/web.sergeitumanov.com.git
-   cd portfolio
+   cd web.sergeitumanov.com
 ```
 2. Install dependencies:
 ```bash
@@ -56,6 +56,7 @@ npm install
 npm run dev
 ```
 Open your browser and navigate to http://localhost:5173.
+
 4. Build for production:
 ```bash
 npm run build
@@ -71,6 +72,5 @@ LinkedIn: [linkedin](https://www.linkedin.com/in/sergei-tumanov/)
 GitHub: github.com/SergeiTWeb
 
 If you like this build you can [buy me a coffee](https://www.paypal.com/paypalme/nctmmrn)
-
 
 Built with ❤️ using React & TypeScript.

@@ -5,6 +5,7 @@ import Portfolio from './pages/Portfolio';
 import Clients from './pages/Clients';
 import Contact from './pages/Contact';
 import WordPressProjects from './pages/WordPressProjects';
+import Experiments from './pages/Experiments'; // <-- ADD THIS IMPORT
 import NotFound from './pages/NotFound';
 import './App.css';
 
@@ -18,6 +19,7 @@ function App() {
           <Route path="clients" element={<Clients />} />
           <Route path="contact" element={<Contact />} />
           <Route path="wordpress-projects" element={<WordPressProjects />} />
+          <Route path="experiments" element={<Experiments />} /> {/* <-- ADD THIS ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>

@@ -54,16 +54,6 @@ const clients = [
     status: "live"
   },
   {
-    id: 7,
-    logo: "/img/clients/client-kerry-co.svg",
-    name: "Kerry & Co Design",
-    industry: "Wallcoverings, textiles, and home accessories retailer.",
-    services: "E-commerce functionality implementation, maintenance, and technical support.",
-    link: "https://kerrycodesign.com",
-    status: "coming-soon" // Options: "live", "coming-soon", "archived"
-  },
-
-  {
     id: 8,
     logo: "/img/clients/client-wilvarinvocal.png",
     name: "Wilvarin Vocal",
@@ -72,7 +62,6 @@ const clients = [
     link: "https://wilvarinvocal.ru/",
     status: "live"
   },
-
   {
     id: 9,
     logo: "/img/clients/client-callum-lee-gow.jpg",
@@ -109,6 +98,7 @@ const clients = [
     link: "https://001mm.ru",
     status: "live"
   },
+  // --- ARCHIVED PROJECTS ---
   {
     id: 13,
     logo: "/img/clients/client-tgap.avif",
@@ -189,6 +179,15 @@ const clients = [
     services: "E-commerce development, design, and technical support.",
     link: "#",
     status: "archived"
+  },
+  {
+    id: 7,
+    logo: "/img/clients/client-kerry-co.svg",
+    name: "Kerry & Co Design",
+    industry: "Wallcoverings, textiles, and home accessories retailer.",
+    services: "E-commerce functionality implementation, maintenance, and technical support.",
+    link: "#",
+    status: "archived"
   }
 ];
 
@@ -203,18 +202,18 @@ function Clients() {
           {clients.map((client) => (
             <div key={client.id} className="client-row">
               <div className="client-logo">
-              <img 
-                src={client.logo} 
-                alt={`${client.name} logo`} 
-                onError={(e) => {
-                  const img = e.target as HTMLImageElement;
-                  img.style.display = 'none';
-                  const fallback = img.nextElementSibling as HTMLElement;
-                  if (fallback) {
-                    fallback.style.display = 'flex';
-                  }
-                }} 
-              />
+                <img 
+                  src={client.logo} 
+                  alt={`${client.name} logo`} 
+                  onError={(e) => {
+                    const img = e.target as HTMLImageElement;
+                    img.style.display = 'none';
+                    const fallback = img.nextElementSibling as HTMLElement;
+                    if (fallback) {
+                      fallback.style.display = 'flex';
+                    }
+                  }} 
+                />
                 <span className="logo-fallback">{client.name.charAt(0)}</span>
               </div>
               

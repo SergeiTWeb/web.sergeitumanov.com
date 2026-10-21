@@ -6,7 +6,6 @@ function Layout() {
   const [menuOpen, setMenuOpen] = useState(false);
   const location = useLocation();
 
-  // Update the document title whenever the route changes
   useEffect(() => {
     const path = location.pathname;
     let pageTitle = "Home";
@@ -15,6 +14,7 @@ function Layout() {
     else if (path === "/clients") pageTitle = "Clients";
     else if (path === "/contact") pageTitle = "Contact";
     else if (path === "/wordpress-projects") pageTitle = "WordPress Projects";
+    else if (path === "/experiments") pageTitle = "React Experiments";
     else if (path === "/") pageTitle = "Home";
     else pageTitle = "404 Not Found";
 
@@ -32,7 +32,6 @@ function Layout() {
             <span className="logo-subtitle">Web Developer & Designer</span>
           </div>
           
-          {/* FIXED: Added a professional SVG hamburger icon */}
           <button 
             className="menu-toggle"
             onClick={() => setMenuOpen(!menuOpen)}
@@ -47,7 +46,17 @@ function Layout() {
           
           <nav className={`nav ${menuOpen ? 'active' : ''}`}>
             <NavLink to="/" onClick={() => setMenuOpen(false)}>About</NavLink>
-            <NavLink to="/portfolio" onClick={() => setMenuOpen(false)}>Portfolio</NavLink>
+            
+            <div className="nav-dropdown">
+              <NavLink to="/portfolio" className="dropdown-trigger" onClick={() => setMenuOpen(false)}>
+                Portfolio
+              </NavLink>
+              <div className="dropdown-menu">
+                <NavLink to="/wordpress-projects" onClick={() => setMenuOpen(false)}>WordPress</NavLink>
+                <NavLink to="/experiments" onClick={() => setMenuOpen(false)}>React</NavLink>
+              </div>
+            </div>
+
             <NavLink to="/clients" onClick={() => setMenuOpen(false)}>Clients</NavLink>
             <NavLink to="/contact" onClick={() => setMenuOpen(false)}>Contact</NavLink>
           </nav>

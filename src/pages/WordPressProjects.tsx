@@ -27,7 +27,8 @@ const wordpressProjects = [
     name: "Kerry & Co Design",
     url: "https://kerrycodesign.com",
     screenshot: "/img/projects/wp-kerry-co.png",
-    description: "Wallcoverings, textiles, and home accessories retailer with e-commerce functionality."
+    description: "Wallcoverings, textiles, and home accessories retailer.",
+    status: "archived"
   },
   {
     id: 5,
@@ -58,17 +59,38 @@ function WordPressProjects() {
               <div className="wp-screenshot">
                 <img src={project.screenshot} alt={`${project.name} screenshot`} />
                 <div className="wp-overlay">
-                  <a href={project.url} target="_blank" rel="noopener noreferrer" className="wp-link">
-                    Visit Site →
-                  </a>
+                  {project.status === "archived" ? (
+                    <span className="wp-link disabled">Archived</span>
+                  ) : (
+                    <a href={project.url} target="_blank" rel="noopener noreferrer" className="wp-link">
+                      Visit Site →
+                    </a>
+                  )}
                 </div>
               </div>
-              <div className="wp-info">
+              
+              <div className="wp-info" style={{ display: 'flex', flexDirection: 'column', height: '100%' }}>
                 <h3>{project.name}</h3>
                 <p>{project.description}</p>
-                <a href={project.url} target="_blank" rel="noopener noreferrer" className="wp-button">
-                  View Live Site
-                </a>
+                
+                {project.status === "archived" ? (
+                  <span 
+                    className="wp-button archived" 
+                    style={{ marginTop: 'auto', opacity: 0.5, cursor: 'not-allowed', textDecoration: 'none' }}
+                  >
+                    Archived
+                  </span>
+                ) : (
+                  <a 
+                    href={project.url} 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="wp-button"
+                    style={{ marginTop: 'auto' }}
+                  >
+                    View Live Site
+                  </a>
+                )}
               </div>
             </div>
           ))}
